@@ -1,4 +1,4 @@
-/*algorithm to find factorial of a number*/
+/*algorithm to find the factorial of a number*/
 
 const factorial = (num,fact=1)=>{
 fact=fact*num;
