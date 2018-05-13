@@ -23,3 +23,11 @@ const fun1 = (str1) => {
 
 fun1('madhusudhan');
 
+// using regular expressions
+
+const fun2 = (str2) => {
+  const matches = str2.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
+};
+
+console.log(fun2('aeiousmadhu'));
