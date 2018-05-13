@@ -38,3 +38,15 @@ console.log(obj1,obj2);
 
 console.log(fun('rail safety','fairy tales'));
 console.log(fun('hi there','bye there'));
+
+// most simple code
+
+const fun1 = (str3, str4) => {
+  if (str3.replace(/[^\w]/g, '').toLowerCase().split('').sort().join() === str4.replace(/[^\w]/g, '').toLowerCase().split('').sort().join()){
+  return 'anagram'
+  }else{
+  return 'not anagram'
+  }
+};
+console.log(fun1('rail safety','fairy tales'));
+
