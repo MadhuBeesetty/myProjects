@@ -7,8 +7,12 @@ class Queue {
   this.data.unshift(record);
   }
 
-  poping () {
+  remove () {
   return this.data.pop();
+  }
+
+  peek () {
+  return this.data[this.data.length-1];
   }
 }
 
@@ -19,6 +23,7 @@ console.log(a);
 a.add(2);
 console.log(a);
 a.add(3);
+console.log(a.peek());
 console.log(a);
-console.log(a.poping());
+console.log(a.remove());
 console.log(a);
